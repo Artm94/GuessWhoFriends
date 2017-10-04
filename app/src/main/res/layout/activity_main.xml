@@ -6,39 +6,52 @@
     android:fillViewport="true">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context="com.example.arturo.guesswhofriends.MainActivity">
-
-    <TextView
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        style="@style/AppNameStyle"/>
+        tools:background="@drawable/circulos_de_colores"
+        tools:context="com.example.arturo.guesswhofriends.MainActivity">
 
-    <Button
-        android:id="@+id/btnPlay"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_play"
-        android:layout_centerInParent="true"
-        style="@style/ButtonStyle"/>
+        <TextView
+            android:id="@+id/textView"
+            style="@style/AppNameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:foreground="@color/cardview_shadow_end_color"
+            android:text="@string/app_name"
+            android:textAllCaps="false"
+            android:textColor="@color/activity_login_text"
+            android:textStyle="bold|italic" />
 
-    <Button
-        android:id="@+id/btnAchievments"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_achievments"
-        android:layout_below="@+id/btnPlay"
-        style="@style/ButtonStyle"/>
+        <Button
+            android:id="@+id/btnPlay"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_play"
+            android:layout_marginTop="45dp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true" />
 
-    <Button
-        android:id="@+id/btnConfig"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_config"
-        android:layout_below="@+id/btnAchievments"
-        style="@style/ButtonStyle"/>
-</RelativeLayout>
+        <Button
+            android:id="@+id/btnAchievments"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_achievments"
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/btnPlay"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btnConfig"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_config"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/btnAchievments"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
 </ScrollView>
