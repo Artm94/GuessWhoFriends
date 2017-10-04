@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroud_gray"
@@ -26,7 +27,7 @@
         android:layout_width="190dp"
         android:layout_height="174dp"
         android:layout_gravity="center"
-        android:src="@drawable/guess_who" />
+        android:src="@drawable/imagen" />
 
     <TextView
         android:id="@+id/textView4"
@@ -57,7 +58,7 @@
         android:layout_height="wrap_content"
         android:elevation="11dp"
         android:fontFamily="casual"
-        android:gravity="center"
+        android:gravity="center_vertical"
         android:text=">Martínez Cura Arturo de Jesús"
         android:textAlignment="viewStart"
         android:textColor="@color/buttonTextColor"
@@ -69,7 +70,6 @@
         android:layout_height="wrap_content"
         android:elevation="11dp"
         android:fontFamily="casual"
-        android:gravity="center"
         android:text=">Lázaro Velasco Raúl"
         android:textAlignment="viewStart"
         android:textColor="@color/buttonTextColor"
@@ -88,10 +88,14 @@
         android:textSize="18sp" />
 
     <Button
-        style="@style/Theme.AppCompat.Light"
-        android:layout_width="160dp"
+        android:id="@+id/btnVolver"
+        style="@style/ButtonStyle"
+        android:layout_width="194dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
         android:layout_gravity="center"
+        android:layout_marginTop="45dp"
         android:text="Volver" />
 
 </LinearLayout>
