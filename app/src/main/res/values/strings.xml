@@ -11,6 +11,7 @@
     <string name="btnTwo">Opcion 2</string>
     <string name="btnThree">Opcion 3</string>
     <string name="btnFour">Opcion 4</string>
+    <string name="btnVolver">Volver</string>
 
     <string name="nothing">description</string>
 </resources>

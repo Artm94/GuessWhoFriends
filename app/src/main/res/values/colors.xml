@@ -4,7 +4,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF0000</color>
-    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="buttonTextColor">#ffffff</color>
     <color name="red_start_gradient">#FF0000</color>
     <color name="red_end_gradient">#BB1515</color>
     <color name="pressed_start_gradient">#cdecf3</color>
@@ -13,7 +13,7 @@
     <color name="blue_end_gradient">#4cb7db</color>
     <color name="border_button">#000000</color>
     <color name="pressed_border_button">#FFFFFF</color>
-    <color name="activity_login_text">#FFFFFF</color>
+    <color name="activity_login_text">#ffffff</color>
     <color name="blue_border">#003366</color>
     <color name="img_border">#8099d6ea</color>
 </resources>
