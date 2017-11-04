@@ -1,19 +1,33 @@
 package com.example.arturo.guesswhofriends;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 
 import com.facebook.AccessToken;
 import com.facebook.AccessTokenTracker;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
+import java.util.Random;
+
+import info.movito.themoviedbapi.TmdbApi;
+import info.movito.themoviedbapi.TmdbDiscover;
+import info.movito.themoviedbapi.model.Discover;
+import info.movito.themoviedbapi.model.Genre;
+import info.movito.themoviedbapi.model.MovieDb;
+import info.movito.themoviedbapi.model.core.MovieResultsPage;
+import info.movito.themoviedbapi.model.people.Person;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button btnPlay, btnAchievments, btnConfig;
     private AccessTokenTracker tokenTracker;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         btnPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent gameStart = new Intent(getApplicationContext(), GameActivity.class);
+                Intent gameStart = new Intent(getApplicationContext(), LoadingActivity.class);
                 startActivity(gameStart);
             }
         });
@@ -57,4 +71,5 @@ public class MainActivity extends AppCompatActivity {
     public void setTokenTracker(AccessTokenTracker tokenTracker) {
         this.tokenTracker = tokenTracker;
     }
+
 }

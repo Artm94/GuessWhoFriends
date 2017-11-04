@@ -12,6 +12,17 @@
     <string name="btnThree">Opcion 3</string>
     <string name="btnFour">Opcion 4</string>
     <string name="btnVolver">Volver</string>
-
     <string name="nothing">description</string>
+    <string name="about_text">Acerca de</string>
+    <string name="copyright">Todos los derechos reservados 2017</string>
+    <string name="authors_title">Desarrollado por</string>
+    <string name="author1">>Arturo de Jesus Martinez Cura</string>
+    <string name="author2">>Raul Lazaro Velasco</string>
+    <string name="author3">>Omar Utrera Cruz</string>
+    <string name="logo_description">Logo de la aplicacion</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.</string>
+    <string name="loading">Cargando...</string>
 </resources>

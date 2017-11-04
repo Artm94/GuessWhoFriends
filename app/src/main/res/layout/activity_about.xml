@@ -2,11 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroud_gray"
-    android:backgroundTint="@drawable/itv"
+    android:background="@drawable/blue_gradient"
     android:gravity="center_vertical"
     android:orientation="vertical"
-    android:paddingStart="@dimen/bottom_button_margin">
+    android:paddingTop="@dimen/bottom_button_margin">
 
 
     <TextView
@@ -16,7 +15,7 @@
         android:elevation="11dp"
         android:fontFamily="serif-monospace"
         android:gravity="center"
-        android:text="ACERCA DE"
+        android:text="@string/about_text"
         android:textColor="@color/buttonTextColor"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -26,7 +25,8 @@
         android:layout_width="190dp"
         android:layout_height="174dp"
         android:layout_gravity="center"
-        android:src="@drawable/imagen" />
+        android:src="@drawable/logo_app"
+        android:contentDescription="@string/logo_description" />
 
     <TextView
         android:id="@+id/textView4"
@@ -35,7 +35,7 @@
         android:elevation="11dp"
         android:fontFamily="casual"
         android:gravity="center"
-        android:text="Todos los Derechos Reservados 2017"
+        android:text="@string/copyright"
         android:textColor="@color/buttonTextColor"
         android:textSize="24sp" />
 
@@ -46,10 +46,10 @@
         android:elevation="11dp"
         android:fontFamily="casual"
         android:gravity="center"
-        android:text="Desarrollado por:"
+        android:text="@string/authors_title"
         android:textAllCaps="false"
         android:textColor="@color/buttonTextColor"
-        android:textSize="24sp" />
+        android:textSize="@dimen/big_text" />
 
     <TextView
         android:id="@+id/textView6"
@@ -58,10 +58,10 @@
         android:elevation="11dp"
         android:fontFamily="casual"
         android:gravity="center_vertical"
-        android:text=">Martínez Cura Arturo de Jesús"
+        android:text="@string/author1"
         android:textAlignment="viewStart"
         android:textColor="@color/buttonTextColor"
-        android:textSize="18sp" />
+        android:textSize="@dimen/middle_text" />
 
     <TextView
         android:id="@+id/textView7"
@@ -69,10 +69,10 @@
         android:layout_height="wrap_content"
         android:elevation="11dp"
         android:fontFamily="casual"
-        android:text=">Lázaro Velasco Raúl"
+        android:text="@string/author2"
         android:textAlignment="viewStart"
         android:textColor="@color/buttonTextColor"
-        android:textSize="18sp" />
+        android:textSize="@dimen/middle_text" />
 
     <TextView
         android:id="@+id/textView8"
@@ -81,14 +81,14 @@
         android:elevation="11dp"
         android:fontFamily="casual"
         android:gravity="center"
-        android:text=">Utrera Cruz Omar"
+        android:text="@string/author3"
         android:textAlignment="viewStart"
         android:textColor="@color/buttonTextColor"
-        android:textSize="18sp" />
+        android:textSize="@dimen/middle_text" />
 
     <Button
         android:id="@+id/btnVolver"
-        style="@style/ButtonStyle"
+        style="@style/MainActivityButtonStyle"
         android:layout_width="194dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
