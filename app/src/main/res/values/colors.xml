@@ -18,5 +18,6 @@
     <color name="pressed_border_button">#FFFFFF</color>
     <color name="activity_login_text">#ffffff</color>
     <color name="blue_border">#003366</color>
+    <color name="ligh_blue_border">#0099cc</color>
     <color name="img_border">#8099d6ea</color>
 </resources>
