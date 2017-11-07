@@ -77,7 +77,7 @@ public class DownloadImageTask extends AsyncTask<String, Void, Bitmap>{
                 @Override
                 public void onAnimationEnd(Animation animation) {
                     //Starts fadeIn animation and changes the background when the fadeOut animation ends
-                    bitmap = blurRenderScript(context, bitmap, 25);
+                    bitmap = blurRenderScript(context, bitmap, 20);
                     view.setBackground(new BitmapDrawable(context.getResources(), bitmap));
                     view.startAnimation(fadeIn);
                 }

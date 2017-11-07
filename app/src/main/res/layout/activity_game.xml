@@ -12,7 +12,7 @@
         android:id="@+id/backgroundLayout"
         android:minWidth="25dp"
         android:minHeight="25dp"
-        android:background="@drawable/blue_gradient_1"/>
+        android:background="@drawable/high_blue"/>
 
     <ScrollView
         android:layout_width="match_parent"

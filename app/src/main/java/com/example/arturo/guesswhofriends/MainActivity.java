@@ -1,12 +1,14 @@
 package com.example.arturo.guesswhofriends;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.ScrollView;
 
 import com.facebook.AccessToken;
 import com.facebook.AccessTokenTracker;
@@ -28,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btnPlay, btnAchievments, btnConfig;
     private AccessTokenTracker tokenTracker;
+    private ScrollView scrollView;
+    private AnimationDrawable animationDrawable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +59,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        scrollView = (ScrollView) findViewById(R.id.scrollView);
+        animationDrawable = (AnimationDrawable) scrollView.getBackground();
+        animationDrawable.setExitFadeDuration(2000);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(animationDrawable != null || !animationDrawable.isRunning()){
+            animationDrawable.start();
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (animationDrawable != null && animationDrawable.isRunning())
+            animationDrawable.stop();
     }
 
     public void updateToken(AccessToken token){
