@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Yo solo quiero pasar Coss >:v</string>
+    <string name="app_name">The Movie DB Trivia</string>
     <string name="facebook_app_id">273118589842090</string>
     <string name="fb_login_protocol_scheme">fb273118589842090</string>
     <string name="btn_play">Jugar</string>
@@ -25,4 +25,9 @@
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     consequat.</string>
     <string name="loading">Cargando...</string>
+    <string name="txtQuantity">Numero de preguntas</string>
+    <string name="txtDifficulty">Nivel de dificultad</string>
+    <string name="txtSound">Musica de ambiente</string>
+    <string name="txtAnimations">Animaciones de fondo</string>
+    <string name="btnAbout">Acerca de</string>
 </resources>
