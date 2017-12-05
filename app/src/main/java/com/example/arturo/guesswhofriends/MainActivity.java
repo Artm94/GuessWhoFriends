@@ -1,8 +1,13 @@
 package com.example.arturo.guesswhofriends;
 
+import android.app.Service;
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.AsyncTask;
+import android.os.IBinder;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -45,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
         updateToken(AccessToken.getCurrentAccessToken());
 
         setTokenTracker(new AccessTokenTracker() {
-            @Override
             protected void onCurrentAccessTokenChanged(AccessToken oldAccessToken, AccessToken currentAccessToken) {
                 updateToken(currentAccessToken);
             }
@@ -56,6 +60,22 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent gameStart = new Intent(getApplicationContext(), LoadingActivity.class);
                 startActivity(gameStart);
+            }
+        });
+
+        btnAchievments.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gameScores = new Intent(getApplicationContext(), HighScoresActivity.class);
+                startActivity(gameScores);
+            }
+        });
+
+        btnConfig.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent settingsActivity = new Intent(getApplicationContext(), SettingsActivity.class);
+                startActivity(settingsActivity);
             }
         });
 
@@ -75,8 +95,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        if (animationDrawable != null && animationDrawable.isRunning())
+        if (animationDrawable != null && animationDrawable.isRunning()) {
             animationDrawable.stop();
+        }
     }
 
     public void updateToken(AccessToken token){
@@ -93,5 +114,6 @@ public class MainActivity extends AppCompatActivity {
     public void setTokenTracker(AccessTokenTracker tokenTracker) {
         this.tokenTracker = tokenTracker;
     }
+
 
 }

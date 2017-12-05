@@ -4,7 +4,7 @@
     <string name="fb_login_protocol_scheme">fb273118589842090</string>
     <string name="btn_play">Jugar</string>
     <string name="btn_config">Configuracion</string>
-    <string name="btn_achievments">Logros</string>
+    <string name="btn_achievments">Puntajes</string>
     <string name="logfb_message">Para el correcto funcionamiento de este juego es
         necesario iniciar sesion en Facebook</string>
     <string name="btnOne">Opcion 1</string>
@@ -24,10 +24,29 @@
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     consequat.</string>
+    <string name="date_score_label">Fecha de la partida: </string>
+    <string name="score_label">Puntaje conseguido: </string>
     <string name="loading">Cargando...</string>
     <string name="txtQuantity">Numero de preguntas</string>
     <string name="txtDifficulty">Nivel de dificultad</string>
     <string name="txtSound">Musica de ambiente</string>
     <string name="txtAnimations">Animaciones de fondo</string>
     <string name="btnAbout">Acerca de</string>
+    <string name="txtView">Puntaje obtenido:</string>
+    <string name="textScore">0</string>
+    <string name="btnCompartir">Compartir en Facebook</string>
+    <string name="btnPlayAgain">Volver a jugar</string>
+    <string name="txtHighScore">¡Puntaje Registrado!</string>
+    <string-array name="difficulty_labels">
+        <item>Novato</item>
+        <item>Entusiasta</item>
+        <item>Profesional</item>
+        <item>Experto</item>
+    </string-array>
+    <string-array name="quantity_labels">
+        <item>5 Preguntas</item>
+        <item>10 Preguntas</item>
+        <item>15 Preguntas</item>
+        <item>20 Preguntas</item>
+    </string-array>
 </resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arturo.guesswhofriends.MainActivity"
+    android:background="@drawable/blue_lagoon">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/AppNameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:foreground="@color/cardview_shadow_end_color"
+            android:text="@string/txtView"
+            android:textAllCaps="false"
+            android:textColor="@color/activity_login_text"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textScore"
+            style="@style/AppNameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:foreground="@color/cardview_shadow_end_color"
+            android:text="@string/textScore"
+            android:textAllCaps="false"
+            android:textColor="@color/activity_login_text"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="45dp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/imgHighScore"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/medal"
+            android:layout_below="@+id/textScore"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txtHighScore"
+            android:text="@string/txtHighScore"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgHighScore"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnCompartir"
+            style="@style/MainActivityButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnCompartir"
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/txtHighScore"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btnPlayAgain"
+            style="@style/MainActivityButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnPlayAgain"
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/btnCompartir"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</ScrollView>

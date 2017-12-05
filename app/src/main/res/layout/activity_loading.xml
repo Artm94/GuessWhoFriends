@@ -5,18 +5,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context="com.example.arturo.guesswhofriends.LoadingActivity">
-
-    <ImageView
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logo_app"/>
+    tools:context="com.example.arturo.guesswhofriends.LoadingActivity"
+    android:background="@drawable/deep_contrast"
+    android:id="@+id/loadingLayout">
 
     <TextView
         android:layout_gravity="center"
         android:text="@string/loading"
-        android:textSize="45dp"
+        android:textSize="45sp"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
