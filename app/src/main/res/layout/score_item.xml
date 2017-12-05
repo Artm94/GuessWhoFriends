@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:rowCount="2"
+    android:columnCount="5"
+    android:padding="10dp"
+    android:background="@drawable/button_style">
+
+    <ImageView
+        android:id="@+id/imgScore"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_row="0"
+        android:layout_rowSpan="2"
+        android:src="@drawable/test_image"
+        android:layout_gravity="fill_vertical"
+        android:layout_marginEnd="5dp"/>
+    <TextView
+        android:id="@+id/txtDate"
+        android:text="@string/date_score_label"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_columnSpan="3"
+        android:layout_row="0"
+        android:layout_gravity="center_vertical"/>
+    <TextView
+        android:id="@+id/txtScore"
+        android:text="@string/score_label"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_columnSpan="3"
+        android:layout_row="1"
+        android:layout_gravity="center_vertical"/>
+
+</GridLayout>
